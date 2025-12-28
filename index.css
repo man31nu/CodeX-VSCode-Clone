@@ -667,3 +667,155 @@ html {
     font-size: 18px;
   }
 }
+
+
+@keyframes slideUp {
+  from { transform: translateY(100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+
+/* ============================= */
+/* 📱 MOBILE OPTIMIZATION */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 5%;
+    gap: 10px;
+  }
+
+  .navbar .leftNav ul {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .navbar .rightNav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar .rightNav .inputBox {
+    width: 100%;
+  }
+
+  /* Hero Sections */
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5,
+  .section6 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .section1 .rightSection1,
+  .section2 .rightSection2,
+  .section3 .rightSection3,
+  .section4 .rightSection4,
+  .section5 .rightSection5,
+  .section6 .rightSection6 {
+    width: 100%;
+  }
+
+  .section2 .leftSection2,
+  .section3 .leftSection3,
+  .section4 .leftSection4,
+  .section5 .leftSection5,
+  .section6 .leftSection6 {
+    width: 100%;
+  }
+
+  /* Grids → Single Column */
+  .section2 .rightSection2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section3 .rightSection3 > div {
+    grid-template-columns: 1fr;
+  }
+
+  .section8 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Typography */
+  .section1 .leftSection1 h2 {
+    font-size: 32px;
+  }
+
+  .section2 h2,
+  .section3 h2,
+  .section4 h3,
+  .section5 h3,
+  .section6 h3 {
+    font-size: 24px;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerSocial {
+    gap: 25px;
+  }
+
+  .footerProfiles {
+    gap: 15px;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* ============================= */
+/* 📱 SMALL PHONES */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .section1 {
+    padding: 40px 5%;
+  }
+
+  .section1 .leftSection1 h2 {
+    font-size: 26px;
+  }
+
+  .section2 .rightSection2,
+  .section8 {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar .leftNav ul {
+    justify-content: center;
+  }
+
+  .footerHeading {
+    font-size: 20px;
+  }
+
+  .footerMade,
+  .goTop {
+    font-size: 16px;
+  }
+
+  .footerSocial a {
+    font-size: 32px;
+  }
+}
