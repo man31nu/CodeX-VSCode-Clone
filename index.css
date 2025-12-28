@@ -646,3 +646,24 @@ footer .leftFooter span a i, footer .rightFooter {
 html {
   scroll-behavior: smooth;
 }
+
+
+@media (max-width: 480px) {
+
+  .section1 .leftSection1 h2 {
+    font-size: 28px;
+  }
+
+  .section2 .rightSection2 {
+    grid-template-columns: 1fr;
+  }
+
+  .footerHeading {
+    font-size: 22px;
+  }
+
+  .footerMade,
+  .goTop {
+    font-size: 18px;
+  }
+}
